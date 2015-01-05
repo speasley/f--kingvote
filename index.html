@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Fucking vote.</title>
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://www.google.com/jsapi"></script>
+  <script src="js/chartkick.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
-
 </head>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
+      <div class="ten columns" style="margin-top: 25%">
         <h1><img src="images/ballot.png" height="45" width="45" style="margin-right:5px;" />Fucking vote.</h1>
         <p>It is the quickest, simplest thing you can do to influence how this country is run.</p>
         <h2>&ldquo;My vote won&rsquo;t make a difference anyway.&rdquo;</h2>
-        <p><b>38.6%</b> of the eligible voters had the same thought in the last election. Meanwhile, the rest of the eligible voters formed our current government.</p>
+        <p>Multiply that one statement by <b>9,251,160</b>. That&rsquo;s how many eligible voters chose not to vote in the last election. Meanwhile, those who <em>did</em> vote formed our current government.</p>
         <p>Your vote is pointless only when you don&rsquo;t cast it.</p>
+        <div id="turnout" style="height: 300px;"></div>
         <h2>Vote. Then bitch.</h2>
-        <p>Just fucking vote, then complain all you want. But don&rsquo;t whine about your vote being useless if you can&rsquo;t even give enough of a fuck to fulfill your role in the process. Be democracy, not apathy.</p>
+        <p>Just fucking vote, then complain all you want. But don&rsquo;t whine about your vote being pointless if you can&rsquo;t even give enough of a fuck to fulfill your role in the process. Be democracy, not apathy.</p>
       </div>
     </div>
   </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script>
+  new Chartkick.PieChart("turnout", [["Fucking voted", 14720580],["Did not vote", 9251160]], {"colors": ["#dc3912", "#999"]});
+  </script>
 </body>
 </html>
