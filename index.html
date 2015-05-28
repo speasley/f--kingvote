@@ -1,8 +1,15 @@
+<?php
+if (strstr($_SERVER[HTTP_HOST], 'stephenpeasley')) {
+  $uc = "uc";
+}else{
+  $uc = "--";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Fucking vote.</title>
+  <title>F<?php echo $uc; ?>king vote.</title>
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,9 +24,9 @@
 </head>
 <body>
   <div class="section hero">
-    <h1 class="section-heading">Fucking vote.</h1>
+    <h1 class="section-heading">F<?php echo $uc; ?>king vote.</h1>
     <p class="section-description">Be part of complacency or part of the solution</p>
-    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20am%20part%20of%20the%20solution.%20I%20will%20fucking%20vote.&hashtags=fuckingvote,cdnpoli" data-size="large">Tweet #fuckingvote</a>
+    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20am%20part%20of%20the%20solution.%20I%20will%20f<?php echo $uc; ?>king%20vote.&hashtags=f<?php echo $uc; ?>kingvote,cdnpoli" data-size="large">Tweet #f<?php echo $uc; ?>kingvote</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
   </div>
 
@@ -27,19 +34,19 @@
     <div class="container">
       <div class="row">
         <div class="one-third column value">
-          <h2 class="value-multiplier">67%</h2>
-          <h5 class="value-heading">Purchase Increase</h5>
-          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+          <h2 class="value-multiplier">14,720,580</h3>
+          <h5 class="value-heading">votes cast</h5>
+          <p class="value-description">61.4% of eligible voters cast their ballot in the 2011 federal election.</p>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
-          <h5 class="value-heading">Multi-device Users</h5>
-          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+          <h2 class="value-multiplier">9,251,160</h3>
+          <h5 class="value-heading">non-votes</h5>
+          <p class="value-description">38.6% of eligible voters simply didn&rsquo;t bother&hellip; and let everyone else choose for them.</p>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">66%</h2>
-          <h5 class="value-heading">Sad Users</h5>
-          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+          <h2 class="value-multiplier">6</h3>
+          <h5 class="value-heading">individual votes</h5>
+          <p class="value-description">determined a district&rsquo;s elected MLA in the <a href="http://news.nationalpost.com/news/world/alberta-ndp-win-calgary-foothills-by-six-votes-after-exact-tie-before-the-recount">2015 Alberta provincial election</a> after a dead tie before the recount.</p>
         </div>
       </div>
     </div>
@@ -47,17 +54,16 @@
 
   <div class="section get-help">
     <div class="container">
-      <h3 class="section-heading">Need help getting started?</h3>
-      <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
-      <p>It is the quickest, simplest thing you can do to influence how this country is run.</p>
-      <h2>&ldquo;My vote doesn&rsquo;t matter.&rdquo;</h2>
+      <h3 class="section-heading">Fucking vote.</h3>
+      <p class="section-description">It is the quickest, simplest thing you can do to influence how this country is run.</p>
+      <h3>&ldquo;My vote doesn&rsquo;t matter.&rdquo;</h3>
       <p>In the 2015 Alberta provincial election, a candidate won her seat by only <a href="http://news.nationalpost.com/news/world/alberta-ndp-win-calgary-foothills-by-six-votes-after-exact-tie-before-the-recount">six votes</a> after a tie before the recount.</p>
-      <h2>&ldquo;My vote won&rsquo;t make a difference anyway.&rdquo;</h2>
+      <h3>&ldquo;My vote won&rsquo;t make a difference anyway.&rdquo;</h3>
       <p>Multiply that one statement by <b>9,251,160</b>. That&rsquo;s how many eligible voters chose not to vote in the last election. Meanwhile, those who <em>did</em> vote formed our current government.</p>
       <p>Your vote is pointless only when you don&rsquo;t cast it.</p>
       
-      <h2>Vote. Then bitch.</h2>
-      <p>Just fucking vote, then complain all you want. But don&rsquo;t whine about your vote being pointless if you can&rsquo;t even give enough of a fuck to fulfill your role in the process. Be democracy, not apathy.</p>
+      <h3>Vote. Then bitch.</h3>
+      <p>Just f<?php echo $uc; ?>king vote, then complain all you want. But don&rsquo;t whine about your vote being pointless if you can&rsquo;t even give enough of a f<?php echo $uc; ?>k to fulfill your role in the process. Be democracy, not apathy.</p>
       <div id="turnout" style="height: 300px;"></div>
       <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
     </div>
@@ -66,7 +72,8 @@
   <div class="section categories">
     <div class="container">
       <h3 class="section-heading">Show up. Vote. Leave.</h3>
-      <p class="section-description">Canadians have an <a href="https://en.wikipedia.org/wiki/Voter_turnout_in_Canada">embarrassing voter turnout record</a>. Research shows that <a href="http://rabble.ca/blogs/bloggers/brent-patterson/2015/05/voter-turnout-key-to-changing-governments">voter turnout is key to changing governments.</a> In 2011, over 9.25 million eligible voters held the power to choose our government&hellip; just by casting their individual votes.</p>
+      <p class="section-description">Canadians have an <a href="https://en.wikipedia.org/wiki/Voter_turnout_in_Canada">embarrassing voter turnout record</a>. In 2011, over 9.25 million eligible voters held the power to choose our government&hellip; just by voting. They didn&rsquo;t.</p>
+      <p>Research shows that <a href="http://rabble.ca/blogs/bloggers/brent-patterson/2015/05/voter-turnout-key-to-changing-governments">voter turnout is key to changing governments.</a></p>
       <div class="row">
         <div class="one-half column category">
           <img class="u-max-full-width" src="images/placeholder.png">
@@ -78,7 +85,7 @@
     </div>
   </div>
   <script>
-  new Chartkick.PieChart("turnout", [["Fucking voted", 14720580],["Never bothered…", 9251160]], {"colors": ["#666", "#999"]});
+  new Chartkick.PieChart("turnout", [["F<?php echo $uc; ?>king voted", 14720580],["Never bothered…", 9251160]], {"colors": ["#666", "#999"]});
   </script>
 </body>
 </html>

@@ -42,7 +42,7 @@
 .values a:link, .values a:visited, .values a:active { color: #fff; }
 .values a:hover { color: #1eaedb; }
 .value-multiplier {
-  margin-bottom: .5rem;
+  margin-bottom: 0;
   color: #11DFC7;
 }
 .value-heading {
