@@ -37,6 +37,7 @@
   color: #fff;
   padding-bottom: 5rem;
 }
+.values h2, .values h5 { color: #fff; }
 .value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
@@ -62,6 +63,7 @@
   background-size: cover;
   color: #fff;
 }
+.categories h3 { color: #fff; }
 .categories .section-description { 
   margin-bottom: 4rem;
 }
@@ -73,7 +75,6 @@
   }
   .hero {
     padding-bottom: 12rem;
-    text-align: left;
     height: 165px;
   }
   .phone {

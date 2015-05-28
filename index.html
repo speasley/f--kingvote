@@ -6,31 +6,77 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="http://www.google.com/jsapi"></script>
   <script src="js/chartkick.js"></script>
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="ten columns" style="margin-top: 25%">
-        <h1><img src="images/ballot.png" height="45" width="45" style="margin-right:5px;" />Fucking vote.</h1>
-        <p>It is the quickest, simplest thing you can do to influence how this country is run.</p>
-        <h2>&ldquo;My vote won&rsquo;t make a difference anyway.&rdquo;</h2>
-        <p>Multiply that one statement by <b>9,251,160</b>. That&rsquo;s how many eligible voters chose not to vote in the last election. Meanwhile, those who <em>did</em> vote formed our current government.</p>
-        <p>Your vote is pointless only when you don&rsquo;t cast it.</p>
-        <div id="turnout" style="height: 300px;"></div>
-        <h2>Vote. Then bitch.</h2>
-        <p>Just fucking vote, then complain all you want. But don&rsquo;t whine about your vote being pointless if you can&rsquo;t even give enough of a fuck to fulfill your role in the process. Be democracy, not apathy.</p>
+  <div class="section hero">
+    <h1 class="section-heading">Fucking vote.</h1>
+    <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
+  </div>
+
+  <div class="section values">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column value">
+          <h2 class="value-multiplier">67%</h2>
+          <h5 class="value-heading">Purchase Increase</h5>
+          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+        </div>
+        <div class="one-third column value">
+          <h2 class="value-multiplier">90%</h2>
+          <h5 class="value-heading">Multi-device Users</h5>
+          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+        </div>
+        <div class="one-third column value">
+          <h2 class="value-multiplier">66%</h2>
+          <h5 class="value-heading">Sad Users</h5>
+          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading">Need help getting started?</h3>
+      <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
+      <p>It is the quickest, simplest thing you can do to influence how this country is run.</p>
+      <h2>&ldquo;My vote doesn&rsquo;t matter.&rdquo;</h2>
+      <p>In the 2015 Alberta provincial election, a candidate won her seat by only <a href="http://news.nationalpost.com/news/world/alberta-ndp-win-calgary-foothills-by-six-votes-after-exact-tie-before-the-recount">six votes</a> after a tie before the recount.</p>
+      <h2>&ldquo;My vote won&rsquo;t make a difference anyway.&rdquo;</h2>
+      <p>Multiply that one statement by <b>9,251,160</b>. That&rsquo;s how many eligible voters chose not to vote in the last election. Meanwhile, those who <em>did</em> vote formed our current government.</p>
+      <p>Your vote is pointless only when you don&rsquo;t cast it.</p>
+      
+      <h2>Vote. Then bitch.</h2>
+      <p>Just fucking vote, then complain all you want. But don&rsquo;t whine about your vote being pointless if you can&rsquo;t even give enough of a fuck to fulfill your role in the process. Be democracy, not apathy.</p>
+      <div id="turnout" style="height: 300px;"></div>
+      <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
+    </div>
+  </div>
+
+  <div class="section categories">
+    <div class="container">
+      <h3 class="section-heading">Responsive Images</h3>
+      <p class="section-description">Skeleton images sit easily in grid with .u-max-full-width class. I suggest exploring solution to serving different images based on device size.</p>
+      <div class="row">
+        <div class="one-half column category">
+          <img class="u-max-full-width" src="images/placeholder.png">
+        </div>
+        <div class="one-half column category">
+          <img class="u-max-full-width" src="images/placeholder.png">
+        </div>
       </div>
     </div>
   </div>
   <script>
-  new Chartkick.PieChart("turnout", [["Fucking voted", 14720580],["Did not vote", 9251160]], {"colors": ["#dc3912", "#999"]});
+  new Chartkick.PieChart("turnout", [["Fucking voted", 14720580],["Never bothered…", 9251160]], {"colors": ["#dc3912", "#999"]});
   </script>
 </body>
 </html>
