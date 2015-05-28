@@ -32,12 +32,15 @@
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/values-bg.jpg');
+  background-image: url('../images/commons-chamber.jpg');
   background-size: cover;
   color: #fff;
   padding-bottom: 5rem;
+	text-shadow: 0px 1px 1px #222;
 }
 .values h2, .values h5 { color: #fff; }
+.values a:link, .values a:visited, .values a:active { color: #fff; }
+.values a:hover { color: #1eaedb; }
 .value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
@@ -59,11 +62,14 @@
 /* Categories
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .categories {
-  background-image: url('../images/values-bg.jpg');
+  background-image: url('../images/commons-chamber.jpg');
   background-size: cover;
   color: #fff;
+	text-shadow: 0px 1px 1px #222;
 }
 .categories h3 { color: #fff; }
+.categories a:link, .categories a:visited, .categories a:active { color: #fff; }
+.categories a:hover { color: #1eaedb; }
 .categories .section-description { 
   margin-bottom: 4rem;
 }
