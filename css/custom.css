@@ -45,6 +45,9 @@
   font-weight: 300;
 }
 .values p.source { margin-top: 5rem; }
+.maths h2 {
+  margin-bottom: 3rem;
+}
 /* Calc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .calc h5, .calc p {
